@@ -6,7 +6,7 @@
 /*   By: tbarde-c <tbarde-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/09 13:30:39 by tbarde-c          #+#    #+#             */
-/*   Updated: 2024/03/07 14:46:46 by tbarde-c         ###   ########.fr       */
+/*   Updated: 2024/03/07 16:26:18 by tbarde-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ static bool	fill_xpm_infos(t_textures *textures)
 	if (xpm_to_rgb(&textures->west) == false)
 		return (false);
 	return (true);
-	//ADD something to free previous malloc
+	//ADD something to free previous malloc if fail
 }
 
 /**
