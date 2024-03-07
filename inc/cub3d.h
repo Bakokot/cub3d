@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yallo <yallo@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tbarde-c <tbarde-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/09 13:11:16 by tbarde-c          #+#    #+#             */
-/*   Updated: 2024/03/07 13:20:35 by yallo            ###   ########.fr       */
+/*   Updated: 2024/03/07 14:57:18 by tbarde-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -243,7 +243,7 @@ bool	check_map_closed(t_map *map, char **map_rectangle);
 *********************************************************/
 int    			rgb_to_int(char *str);
 int				get_xpm_infos(t_cardinal *xpm);
-int				*xpm_to_rgb(t_cardinal *xpm);
+bool			xpm_to_rgb(t_cardinal *xpm);
 t_color_table	*get_color_table(t_cardinal *xpm);
 void			fill_xpm_rgb(t_cardinal *xpm, t_color_table *table);
 
