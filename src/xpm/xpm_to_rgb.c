@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   xpm_to_rgb.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yallo <yallo@student.42.fr>                +#+  +:+       +#+        */
+/*   By: tbarde-c <tbarde-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 15:45:33 by tbarde-c          #+#    #+#             */
-/*   Updated: 2024/03/07 13:53:52 by yallo            ###   ########.fr       */
+/*   Updated: 2024/03/07 14:48:13 by tbarde-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	*xpm_to_rgb(t_cardinal *xpm)
 {
 	t_color_table	*color_table;
-	char *name = ft_strdup(xpm->cardinal_str + 3);
+	char *name = ft_strtrim(ft_strdup(xpm->cardinal_str + 3), " ");
 
 	xpm->fd = open(name, O_RDONLY);
 	if (xpm->fd == -1)
